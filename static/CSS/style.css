@@ -1,0 +1,53 @@
+.hero-content h1{
+   color: #df0707;
+   font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+position: absolute;
+width: 416px;
+height: 111px;
+left: 127px;
+top: 260px;
+}
+.hero-content h3{
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    position: absolute;
+width: 801px;
+height: 96px;
+left: 127px;
+top: 400px;
+
+ }
+ .hero-content p1{
+    position: absolute;
+width: 367px;
+height: 356px;
+left: 307px;
+top: 542px;
+
+ }
+ .hero-content p2{
+    position: absolute;
+    width: 392px;
+    height: 356px;
+    left: 741px;
+    top: 542px;
+ }
+ .hero-content h5{
+    position: absolute;
+    width: 527px;
+    height: 45px;
+    left: 490px;
+    top: 954px;
+ }
+.login a{
+   position: absolute;
+   width: 547px;
+   height: 298px;
+   left: 842px;
+   top: 348px;
+}

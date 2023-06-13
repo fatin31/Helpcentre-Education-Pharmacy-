@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+<!--Register-->
+
+
+<style data-tag="reset-style-sheet">
+    body {
+
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+ <body>
+    <light">
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+
+		  <form method="POST">
+			{% csrf_token %}
+      <form method="POST">
+        {% csrf_token %}
+        <div class="col-md-6">
+          <label for="inputFname" class="form-label">Enter Your User Name</label>
+          <input type="text" class="form-control" id="inputFname" name="username" placeholder="username">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword" class="form-label">Enter Your Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="password" placeholder="password123">
+            </div><br>
+          <div class="col-12">
+             <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+           
+      </form>
+      <p class="text-center">Don't have an account? <a href="sign_up/">Create an account</a>.</p>
+	<div class="text-black mb-3 mb-md-0">
+		<centre>&copy;fh.shakib, 2023 </centre>
+	  </div>
+
+</div>
+</html
+{% endblock %}

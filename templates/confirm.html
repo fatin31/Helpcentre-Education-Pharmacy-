@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+
+    
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>  
+                <th scope="col">#</th>     
+                <th >Credit Name</th>
+                <th >Credit card number</th>
+                <th scope="col">Expiration</th>
+                <th scope="col">CVV</th>
+                <th scope="col">Bkash or Nagad Number</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                <tr>
+                  <td><b>{{ forloop.counter }}</b></td>
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.cardnumber }}</td>
+                  <td>{{ item.expiration }}</td>
+                  <td>{{ item.cvv }}</td>
+                  <td>{{ item.number }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+          </table>
+
+
+
+
+          {% for message in messages %}
+  <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+  <strong>Message</strong> {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {% endfor %}
+    <br>
+    <div class="text-center">
+      <h1>Thank You for Order!</h1>
+      <img src="https://us.123rf.com/450wm/val2014/val20141603/val2014160300005/54302312-shopping-cart-icon.jpg?ver=6"
+      itemprop="image" alt="Shopping cart icon Stock Vector - 54302312" title="Shopping cart icon Stock Vector - 54302312"
+      id="compImg" style="vertical-align: middle;">
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy;fh.shakib, 2023</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+
+
+     
+          
+  </body>
+
+  
+</html>
+
+{% endblock %}

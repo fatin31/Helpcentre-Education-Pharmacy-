@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+
+    
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          <form method="POST" action="{% url 'checkout' %}">
+			{% csrf_token %}
+			  <div class="col-md-6">
+				<label for="inputFname" class="form-label">Name on card</label>
+				<input type="text" class="form-control" id="names" name="name" placeholder=""required>
+                <small class="text-muted">Full name as displayed on card</small>
+			  </div>
+			  <div class="col-md-6">
+				<label for="inputLname" class="form-label">Crdit Card Number</label>
+				<input type="number" class="form-control" id="cardnumbers" name="cardnumber" placeholder=""required>
+                Credit card number is required
+			  </div>
+			  <div class="col-md-6">
+				<label for="inputUsername" class="form-label">Expiration</label>
+				<input type="text" class="form-control" id="expirations" name="expiration" placeholder=""required>
+                Expiration date required
+			  </div>
+			  <div class="col-md-6">
+				<label for="inputPassword" class="form-label">CVV</label>
+				<input type="text" class="form-control" id="cvvs" name="cvv" placeholder=""required>
+                Security code required
+			  </div>
+			  <div class="col-6">
+				<label for="inputEmail4" class="form-label">Bkash or Nagad Number</label>
+				<input type="text" class="form-control" id="nagadnumber" name="number" placeholder=""required>
+                Bkash or Nagad number is required
+			  </div>
+              <br>
+			  <div class="col-12">
+				<button type="submit" class="btn btn-primary">Confirm Order</button>
+			  </div>
+
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+      
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">{{product.name}}</h6>
+                    <small class="text-muted">{{product.quantity}}</small>
+                  </div>
+                  <span class="">{{product.price}}</span>
+                </li>
+      
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">NovoFine Needle</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">৳12.5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Quick Check Blood Glucose Test</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">৳450.0</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <div>
+                      <h6 class="my-0">GlucoLab</h6>
+                      <small class="text-muted">Brief description</small>
+                    </div>
+                    <span class="text-muted">৳550.0</span>
+                  </li>
+
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (BDT)</span>
+                  <strong>৳1012</strong>
+                </li>
+      
+              </ul>
+      
+            </div>
+
+     
+          
+  </body>
+
+  
+</html>
+
+{% endblock %}

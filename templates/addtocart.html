@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+
+    
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="kin@kinskards.com">
+        
+            <!-- Specify an Add to Cart button. -->
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="add" value="1">
+        
+            <!-- Specify details about the item that buyers will purchase. -->
+            <input type="hidden" name="item_name" value="NovoFine Needle">
+            <input type="hidden" name="currency_code" value="USD">
+        
+            <!-- Provide a drop-down menu option field. -->
+            <input type="hidden" name="on0" value="Color">
+            <label for="os0">NovoFine Needle</label>
+
+        
+            <!-- Provide a drop-down menu option field with prices. -->
+            <input type="hidden" name="on1" value="Size">
+            <label for="os1"></label>
+            <select name="os1" id="os1">
+                <option
+                    value="Select a size">-- Select  --</option>
+                <option value="2x4">NovoFine Needle - 12.5 Tk</option>
+
+            </select>
+        
+            <!-- Specify the price that PayPal uses for each option. -->
+            <input type="hidden" name="option_index" value="1">
+            <input type="hidden" name="option_select0" value="2x4">
+            <input type="hidden" name="option_amount0" value="12.5">
+
+        
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                alt="Add to Cart">
+            <img alt="" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+
+        <!--2nd Medicine-->
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="kin@kinskards.com">
+        
+            <!-- Specify an Add to Cart button. -->
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="add" value="1">
+        
+            <!-- Specify details about the item that buyers will purchase. -->
+            <input type="hidden" name="item_name" value="Quick Check Blood Glucose Test">
+            <input type="hidden" name="currency_code" value="USD">
+        
+            <!-- Provide a drop-down menu option field. -->
+            <input type="hidden" name="on0" value="Color">
+            <label for="os0">Quick Check Blood Glucose Test</label>
+
+        
+            <!-- Provide a drop-down menu option field with prices. -->
+            <input type="hidden" name="on1" value="Size">
+            <label for="os1"></label>
+            <select name="os1" id="os1">
+                <option
+                    value="Select a size">-- Select  --</option>
+                <option value="hi">Quick Check Blood Glucose Test - 450 Tk</option>
+
+            </select>
+        
+            <!-- Specify the price that PayPal uses for each option. -->
+            <input type="hidden" name="option_index" value="1">
+            <input type="hidden" name="option_select0" value="hi">
+            <input type="hidden" name="option_amount0" value="450">
+
+        
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                alt="Add to Cart">
+            <img alt="" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+
+        <!--3rd One-->
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <!-- Identify your business so that you can collect the payments. -->
+            <input type="hidden" name="business" value="kin@kinskards.com">
+        
+            <!-- Specify an Add to Cart button. -->
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="add" value="1">
+        
+            <!-- Specify details about the item that buyers will purchase. -->
+            <input type="hidden" name="item_name" value="GlucoLab">
+            <input type="hidden" name="currency_code" value="USD">
+        
+            <!-- Provide a drop-down menu option field. -->
+            <input type="hidden" name="on0" value="Color">
+            <label for="os0">GlucoLab</label>
+
+        
+            <!-- Provide a drop-down menu option field with prices. -->
+            <input type="hidden" name="on1" value="Size">
+            <label for="os1"></label>
+            <select name="os1" id="os1">
+                <option
+                    value="Select a size">-- Select --</option>
+                <option value="hi">GlucoLab - 550 Tk</option>
+
+            </select>
+        
+            <!-- Specify the price that PayPal uses for each option. -->
+            <input type="hidden" name="option_index" value="1">
+            <input type="hidden" name="option_select0" value="hi">
+            <input type="hidden" name="option_amount0" value="550">
+
+        
+            <!-- Display the payment button. -->
+            <input type="image" name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                alt="Add to Cart">
+            <img alt="" width="1" height="1"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+        </form>
+
+     
+          
+  </body>
+
+  
+</html>
+
+{% endblock %}

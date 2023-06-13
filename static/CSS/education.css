@@ -1,0 +1,19 @@
+
+ .hero-content p{
+    position: absolute;
+    width: 511px;
+    height: 336px;
+    left: 1450px;
+    top: 600px;
+ }
+ .hero-content b{
+    position: absolute;
+    width: 527px;
+    height: 45px;
+    font-style: normal;
+    top: 900px;
+
+ }
+
+
+

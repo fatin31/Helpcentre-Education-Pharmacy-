@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<html>
+    <style data-tag="reset-style-sheet">
+       
+      
+       
+        body {
+            
+          background-color: rgba(135, 234, 246, 0.5);
+  
+        }
+    
+      </style>
+      
+      <body>
+        <nav class="navbar" style="background-color: rgba(210, 238, 247, 0.103);">
+          <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                  {% load static %}
+                <a class="navbar-brand" href="#"><img class="img-fluid width=25 " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+              <div class="row">
+                <div class="col-mid-6 hero-content">
+                  <h1>We Rise by lifting others</h1>
+                  <h3>Here you can find all your need about education and pharmacy</h3>
+                </div>
+               
+                
+                
+              </div>
+              <div class="col-mid-6 hero-content">
+                <p1>
+                <img src="{% static 'Education.jpg' %}" class="img-fluid " alt="">
+              </p1>
+              </div>
+              <div class="col-mid-6 hero-content">
+                <p2>
+                <img src="{% static 'pharmacy.jpg' %}" class="img-fluid " alt="">
+              </p2>
+              <h5>&copy;fh.shakib, 2023</h5>
+              
+              </div>
+              </div>
+      </body>
+     
+      
+    
+       
+    
+</html
+{% endblock %}
+

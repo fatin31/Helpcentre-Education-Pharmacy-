@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="diabetics/">Diabetics Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="otc/">OTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="babycare/">Baby Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wchoice/">Women's Choice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pcare/">Personal Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="swness/">Sexual Wellness</a>
+            </li>
+
+
+          </ul>
+
+          <div class="col-mid-6 hero-content">
+            <p>
+            <img src="{% static 'pharmacy.jpg' %}" class="img-fluid " alt="">
+          </p>
+          </div>
+
+
+      <div class="text-black mb-3 mb-md-0 hero-content">
+        <b><centre>&copy; fh.shakib, 2023 </centre></b>
+        </div>
+
+
+  </body>
+
+  
+</html>
+{% endblock %}

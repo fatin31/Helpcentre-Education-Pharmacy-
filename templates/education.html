@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="dhaka/">Dhaka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="khulna/">Khulna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rangpur/">Rangpur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="barishal/">Barishal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chittagong/">Chittagong</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="msingh/">Mymensingh</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="raj/">Rajshahi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="slet/">Sylhet</a>
+            </li>
+
+          </ul>
+
+          <div class="col-mid-6 hero-content">
+            <p>
+            <img src="{% static 'edu.png' %}" class="img-fluid " alt="">
+          </p>
+          </div>
+
+
+      <div class="text-black mb-3 mb-md-0 hero-content">
+        <b><centre>&copy; fh.shakib, 2023 </centre></b>
+        </div>
+
+
+  </body>
+
+  
+</html>
+{% endblock %}

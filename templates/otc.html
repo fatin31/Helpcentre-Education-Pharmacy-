@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<html>       
+
+
+<style data-tag="reset-style-sheet">
+    body {
+        
+      background-color: rgba(103, 215, 230, 0.5);
+
+    }
+
+  </style>
+  <body>
+    <light">
+
+    
+    
+          <div class="container-fluid">
+              {% load static %}
+            <a class="navbar-brand" href="#"><img class="img-fluid " width="25%" src="{% static 'logo.png' %}" alt=""></a>
+          </nav>
+          </div>
+          <div class="row">
+          {% for diabetics in diabetics %}
+          <div class="col">
+               <div class="card" style="width: 15rem;">
+                <img src="{{diabetics.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ diabetics.name }}</h5>
+                  <p class="card-text">({{diabetics.price}} tk)</p>
+
+                  <form action="/" method="POST">
+                    {% csrf_token %}
+                    
+                     <input type="hidden" name="diabetics_id" value="{{diabetics.id}}">
+                    <a href="add-to-cart/" type="submit"  class="btn btn-primary" >Add to Cart </a>
+                   
+                    <div><br>
+                    <a href="ordernow/" type="submit"  class="btn btn-success" >Order Now </a>
+                    </div>
+                  </form>
+                </div>
+               
+              </div>
+              </div>
+              {% endfor %}
+          </div>
+
+     
+          
+  </body>
+
+  
+</html>
+
+{% endblock %}

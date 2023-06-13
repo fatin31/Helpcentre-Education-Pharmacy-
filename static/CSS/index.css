@@ -1,0 +1,15 @@
+
+.ok {
+    position: absolute;
+    width: 416px;
+    height: 111px;
+    left: 127px;
+    top: 260px;
+
+    font-family: 'Itim';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #df0b0b;
+}
