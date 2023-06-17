@@ -1,0 +1,2 @@
+# Helpcentre-Education-Pharmacy-
+The "help center project" is an initiative that aids in the discovery of online medications as well as the identification of the best institutions and universities for recent immigrants in any location.As everyone is aware, our basic rights include access to healthcare, clothing, food, education, and housing. We focused on two areas in particular: medicine and education. In this project, a user can quickly locate medication, acquire that medication, and locate the top-listed universities and institutions as well as their addresses.
